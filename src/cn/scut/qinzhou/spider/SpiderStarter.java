@@ -53,5 +53,6 @@ public class SpiderStarter {
         for (int i = 0; i < 250; i += 25) {
             UrlQueue.addElement("http://movie.douban.com/top250?start=" + i);
         }
+//        UrlQueue.addElement("http://www.100steps.net");
     }
 }
