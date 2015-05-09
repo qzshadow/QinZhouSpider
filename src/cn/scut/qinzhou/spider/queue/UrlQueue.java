@@ -1,19 +1,25 @@
 package cn.scut.qinzhou.spider.queue;
 
 import java.util.LinkedList;
+import cn.scut.qinzhou.spider.model.urlStruct;
 
 public class UrlQueue {
-    private static LinkedList<String> urlQueue = new LinkedList<String>();
+    private static LinkedList<urlStruct> urlQueue = new LinkedList<urlStruct>();
 
-    public synchronized static void addElement(String url) {
-        urlQueue.add(url);
+    public synchronized static void addElement(String url, Integer level) {
+        urlQueue.add(new urlStruct(url, level));
+    }
+    public synchronized static void addElement(urlStruct us){
+        urlQueue.add(us);
+    }
+    public synchronized static void addFirstElement(String url, Integer level) {
+        urlQueue.addFirst(new urlStruct(url, level));
+    }
+    public  synchronized static void addFirstElement(urlStruct us){
+        urlQueue.addFirst(us);
     }
 
-    public synchronized static void addFirstElement(String url) {
-        urlQueue.addFirst(url);
-    }
-
-    public synchronized static String outElement() {
+    public synchronized static urlStruct outElement() {
         return urlQueue.removeFirst();
     }
 
@@ -26,6 +32,7 @@ public class UrlQueue {
     }
 
     public static boolean isContains(String url) {
-        return urlQueue.contains(url);
+        for(urlStruct us : urlQueue) if (us.url.equals(url)) return true;
+        return false;
     }
 }

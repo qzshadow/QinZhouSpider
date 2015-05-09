@@ -2,6 +2,7 @@ package cn.scut.qinzhou.spider.model;
 
 public class FetchedPage {
     private String url;
+    private Integer level;
     private String content;
     private int statusCode;
 
@@ -9,8 +10,9 @@ public class FetchedPage {
 
     }
 
-    public FetchedPage(String url, String content, int statusCode) {
-        this.url = url;
+    public FetchedPage(urlStruct url_level, String content, int statusCode) {
+        this.url = url_level.url;
+        this.level = url_level.level;
         this.content = content;
         this.statusCode = statusCode;
 
@@ -23,6 +25,8 @@ public class FetchedPage {
     public void setUrl(String url) {
         this.url = url;
     }
+    public Integer getLevel(){ return level;}
+    private void  setLevel(Integer level){ this.level = level;}
 
     public String getContent() {
         return content;

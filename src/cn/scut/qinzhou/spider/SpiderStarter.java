@@ -1,10 +1,13 @@
 package cn.scut.qinzhou.spider;
 
 import cn.scut.qinzhou.spider.model.SpiderParams;
+import cn.scut.qinzhou.spider.model.urlStruct;
 import cn.scut.qinzhou.spider.worker.SpiderWorker;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
+import sun.security.provider.ConfigFile;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Properties;
 
 
@@ -36,6 +39,11 @@ public class SpiderStarter {
             // 从配置文件中读取参数
             SpiderParams.WORKER_NUM = Integer.parseInt(properties.getProperty("spider.threadNum"));
             SpiderParams.DEYLAY_TIME = Integer.parseInt(properties.getProperty("spider.fetchDelay"));
+            SpiderParams.MAX_LEVEL = Integer.parseInt(properties.getProperty("spider.fetchDepth"));
+            SpiderParams.FETCHTYPE = Arrays.asList(properties.getProperty("spider.fetchType").split("\\s*,\\s*"));
+            SpiderParams.MAX_SIZE = Integer.parseInt(properties.getProperty("spider.fetchSizeMax"));
+            SpiderParams.MIN_SIZE = Integer.parseInt(properties.getProperty("spider.fetchSizeMin"));
+            SpiderParams.METHOD = properties.getProperty("spider.fetchMethod");
 
             in.close();
         } catch (FileNotFoundException e) {
@@ -50,9 +58,10 @@ public class SpiderStarter {
      */
     private static void initializeQueue() {
         // 例如，需要抓取豆瓣TOP 250的电影信息，根据链接规则生成URLs放入带抓取队列
-        for (int i = 0; i < 250; i += 25) {
-            UrlQueue.addElement("http://movie.douban.com/top250?start=" + i);
-        }
-//        UrlQueue.addElement("http://www.100steps.net");
+//        for (int i = 0; i < 250; i += 25) {
+//            UrlQueue.addElement("http://movie.douban.com/top250?start=" + i);
+//        }
+        UrlQueue.addElement(new urlStruct("http://www.100steps.net",0));
+//        System.out.println(UrlQueue.size());
     }
 }

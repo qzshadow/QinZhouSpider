@@ -7,6 +7,7 @@ import cn.scut.qinzhou.spider.model.SpiderParams;
 import cn.scut.qinzhou.spider.parser.ContentParser;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
 import cn.scut.qinzhou.spider.storage.DataStorage;
+import cn.scut.qinzhou.spider.model.urlStruct;
 
 import java.util.logging.Logger;
 
@@ -35,12 +36,14 @@ public class SpiderWorker implements Runnable {
         // 注： 当队列内容为空时，也不爬取任务已经结束了
         //     因为有可能是UrlQueue暂时空，其他worker线程还没有将新的URL放入队列
         //	        所以，这里可以做个等待时间，再进行抓取（二次机会）
+
         while (!UrlQueue.isEmpty()) {
+            System.out.println(UrlQueue.size());
             // 从待抓取队列中拿URL
-            String url = UrlQueue.outElement();
+            urlStruct url_level = UrlQueue.outElement();
 
             // 抓取URL指定的页面，并返回状态码和页面内容构成的FetchedPage对象
-            FetchedPage fetchedPage = fetcher.getContentFromUrl(url);
+            FetchedPage fetchedPage = fetcher.getContentFromUrlStruct(url_level);
 
             // 检查爬取页面的合法性，爬虫是否被禁止
             if (!handler.check(fetchedPage)) {
