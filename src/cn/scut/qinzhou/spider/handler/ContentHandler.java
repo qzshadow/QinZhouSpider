@@ -1,13 +1,21 @@
 package cn.scut.qinzhou.spider.handler;
 
 import cn.scut.qinzhou.spider.model.FetchedPage;
+import cn.scut.qinzhou.spider.model.SpiderParams;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
 
 public class ContentHandler {
     public boolean check(FetchedPage fetchedPage) {
+
+        if(fetchedPage.getContent() == null){return false;}
         // 如果抓取的页面包含反爬取内容，则将当前URL放入待爬取队列，以便重新爬取
-        if (isAntiScratch(fetchedPage)) {
-            UrlQueue.addFirstElement(fetchedPage.getUrl(),fetchedPage.getLevel());
+        else if (isAntiScratch(fetchedPage)) {
+            // 根据搜索策略的不同将新的url放在UrlQueue的不同位置
+            if (SpiderParams.METHOD.equals("Depth")) {
+                UrlQueue.addFirstElement(fetchedPage.getUrl(), fetchedPage.getLevel() + 1);
+            }
+            else if (SpiderParams.METHOD.equals("Width"))
+                    UrlQueue.addElement(fetchedPage.getUrl(), fetchedPage.getLevel() + 1);
             return false;
         }
 
@@ -27,10 +35,10 @@ public class ContentHandler {
             return true;
         }
 
-//        // 页面内容包含的反爬取内容
-//        if (fetchedPage.getContent().contains("<div>禁止访问</div>")) {
-//            return true;
-//        }
+        // 页面内容包含的反爬取内容
+        if (fetchedPage.getContent().contains("<div>禁止访问</div>")) {
+            return true;
+        }
 
         return false;
     }

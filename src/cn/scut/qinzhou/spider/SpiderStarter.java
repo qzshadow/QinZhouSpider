@@ -61,7 +61,10 @@ public class SpiderStarter {
 //        for (int i = 0; i < 250; i += 25) {
 //            UrlQueue.addElement("http://movie.douban.com/top250?start=" + i);
 //        }
+
+        UrlQueue.addElement(new urlStruct("http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174",0));
         UrlQueue.addElement(new urlStruct("http://www.100steps.net",0));
+
 //        System.out.println(UrlQueue.size());
     }
 }

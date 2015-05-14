@@ -48,10 +48,10 @@ public class ContentParser {
         for(Element url : urls){
             //判断爬取深度是否超出限制
             String addUrl = url.attr("abs:href");
-            if(level < SpiderParams.MAX_LEVEL && !visited(addUrl)) {
+            if(level < SpiderParams.MAX_LEVEL && !visited(addUrl) && !UrlQueue.isContains(addUrl) && !addUrl.isEmpty()) {
                 // 根据搜索策略的不同将新的url放在UrlQueue的不同位置
-                if (SpiderParams.METHOD.equals("Depth")) UrlQueue.addFirstElement(addUrl, level);
-                else if (SpiderParams.METHOD.equals("Width")) UrlQueue.addElement(addUrl, level);
+                if (SpiderParams.METHOD.equals("Depth")) UrlQueue.addFirstElement(addUrl, level+1);
+                else if (SpiderParams.METHOD.equals("Width")) UrlQueue.addElement(addUrl, level+1);
             }
         }
     }

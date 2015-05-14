@@ -50,7 +50,7 @@ public class SpiderWorker implements Runnable {
                 // 切换IP等操作
                 // TODO
 
-                Log.info("Spider-" + threadIndex + ": switch IP to ");
+                Log.info(fetchedPage.getUrl() + " fail "+ "Spider-" + threadIndex);
                 continue;
             }
 

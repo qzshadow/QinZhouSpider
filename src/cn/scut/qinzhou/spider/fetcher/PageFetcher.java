@@ -1,8 +1,10 @@
 package cn.scut.qinzhou.spider.fetcher;
 
 import cn.scut.qinzhou.spider.model.FetchedPage;
+import cn.scut.qinzhou.spider.model.SpiderParams;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
 import cn.scut.qinzhou.spider.model.urlStruct;
+import cn.scut.qinzhou.spider.queue.VisitedUrlQueue;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -67,8 +69,11 @@ public class PageFetcher {
             e.printStackTrace();
 
             // 因请求超时等问题产生的异常，将URL放回待抓取队列，重新爬取
-            Log.info(">> Put back url: " + url_level.url);
-            UrlQueue.addFirstElement(url_level);
+            if(url_level.level<SpiderParams.MAX_LEVEL && !VisitedUrlQueue.isContains(url_level.url) && !UrlQueue.isContains(url_level.url)) {
+                Log.info(">> Put back url: " + url_level.url);
+                if (SpiderParams.METHOD.equals("Depth")) UrlQueue.addFirstElement(url_level.url, url_level.level + 1);
+                else if (SpiderParams.METHOD.equals("Width")) UrlQueue.addElement(url_level.url, url_level.level + 1);
+            }
         }
 
         return new FetchedPage(url_level, content, statusCode);
