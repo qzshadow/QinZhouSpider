@@ -10,7 +10,7 @@ import cn.scut.qinzhou.spider.queue.VisitedUrlQueue;
 import cn.scut.qinzhou.spider.storage.DataStorage;
 import cn.scut.qinzhou.spider.model.urlStruct;
 
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class SpiderWorker implements Runnable {
     private static final Logger Log = Logger.getLogger(SpiderWorker.class.getName());

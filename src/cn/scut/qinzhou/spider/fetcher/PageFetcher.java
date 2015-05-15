@@ -15,7 +15,7 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class PageFetcher {
     private static final Logger Log = Logger.getLogger(PageFetcher.class.getName());

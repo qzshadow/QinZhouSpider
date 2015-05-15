@@ -4,7 +4,6 @@ import cn.scut.qinzhou.spider.model.SpiderParams;
 import cn.scut.qinzhou.spider.model.urlStruct;
 import cn.scut.qinzhou.spider.worker.SpiderWorker;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
-import sun.security.provider.ConfigFile;
 
 import java.io.*;
 import java.util.Arrays;
