@@ -45,37 +45,64 @@ public class PageFetcher {
      * @param url_level
      * @return
      */
-    public FetchedPage getContentFromUrlStruct(urlStruct url_level) {
+    public FetchedPage getContentFromUrlStruct(urlStruct url_level, int thread_num) {
         String content = null;
         int statusCode = 500;
-
-        // 创建Get请求，并设置Header
-        HttpGet getHttp = new HttpGet(url_level.url);
-//        getHttp.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0");
-        getHttp.setHeader("User-Agent","QinZhou 201236672478");
-        HttpResponse response;
-
+        boolean connect = true;
+        boolean download = true;
         try {
-            // 获得信息载体
-            response = client.execute(getHttp);
-            statusCode = response.getStatusLine().getStatusCode();
-            HttpEntity entity = response.getEntity();
-
-            if (entity != null) {
-                // 转化为文本信息, 设置爬取网页的字符集，防止乱码
-                content = EntityUtils.toString(entity, "UTF-8");
+            HttpGet getHttp = null;
+            try {
+                // 创建Get请求，并设置Header
+                getHttp = new HttpGet(url_level.url);
+                getHttp.setHeader("User-Agent", "QinZhou 201236672478");
+            } catch (java.lang.IllegalArgumentException e) {
+                connect = false;
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+//        getHttp.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0");
+            if(!connect){download = false;}
+            else{
+                HttpResponse response = null;
 
-            // 因请求超时等问题产生的异常，将URL放回待抓取队列，重新爬取
-            if(url_level.level<SpiderParams.MAX_LEVEL && !VisitedUrlQueue.isContains(url_level.url) && !UrlQueue.isContains(url_level.url)) {
-                Log.info(">> Put back url: " + url_level.url);
-                if (SpiderParams.METHOD.equals("Depth")) UrlQueue.addFirstElement(url_level.url, url_level.level + 1);
-                else if (SpiderParams.METHOD.equals("Width")) UrlQueue.addElement(url_level.url, url_level.level + 1);
+            try {
+                // 获得信息载体
+                response = client.execute(getHttp);
+                statusCode = response.getStatusLine().getStatusCode();
+            } catch (java.net.SocketTimeoutException | javax.net.ssl.SSLPeerUnverifiedException | java.lang.IllegalArgumentException e) {
+                connect = false;
+            }
+            if (!connect) {
+                download = false;
+            } else {
+                try {
+                    HttpEntity entity = response.getEntity();
+                    if (entity != null) {
+                        // 转化为文本信息, 设置爬取网页的字符集，防止乱码
+                        content = EntityUtils.toString(entity, "UTF-8");
+                    }
+                } catch (java.lang.NullPointerException e) {
+                    download = false;
+                }
             }
         }
+        }catch (Exception e){
+                e.printStackTrace();
 
+                // 因请求超时等问题产生的异常，将URL放回待抓取队列，重新爬取
+                if (url_level.level < SpiderParams.MAX_LEVEL && !VisitedUrlQueue.isContains(url_level.url) && !UrlQueue.isContains(url_level.url)) {
+                    Log.info(">> Put back url: " + url_level.url);
+                    if (SpiderParams.METHOD.equals("Depth"))
+                        UrlQueue.addFirstElement(url_level.url, url_level.level + 1);
+                    else if (SpiderParams.METHOD.equals("Width"))
+                        UrlQueue.addElement(url_level.url, url_level.level + 1);
+                }
+        } finally {
+            if(connect) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Connecting", 1));
+            else if(!connect) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Connecting", 0));
+            if(download) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Downloading", 1));
+            else if(!download) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Downloading", 0));
+        }
         return new FetchedPage(url_level, content, statusCode);
     }
 }
+

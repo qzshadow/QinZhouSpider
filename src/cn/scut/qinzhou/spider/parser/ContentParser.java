@@ -32,7 +32,6 @@ public class ContentParser {
     private boolean containsTargetData(String url, Document contentDoc) {
         // 通过URL判断
         // TODO
-        System.out.println(url);
 
         // 通过content判断，比如需要抓取class为grid_view中的内容
         if (contentDoc.getElementsByClass("grid_view") != null) {

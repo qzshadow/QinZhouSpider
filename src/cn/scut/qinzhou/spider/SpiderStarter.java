@@ -10,6 +10,8 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.Properties;
 
+import static java.lang.Thread.sleep;
+
 
 public class SpiderStarter {
 
@@ -23,6 +25,11 @@ public class SpiderStarter {
         // 创建worker线程并启动
         for (int i = 1; i <= SpiderParams.WORKER_NUM; i++) {
             new Thread(new SpiderWorker(i)).start();
+            try {
+                sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -62,9 +69,9 @@ public class SpiderStarter {
 //            UrlQueue.addElement("http://movie.douban.com/top250?start=" + i);
 //        }
 
-        UrlQueue.addElement(new urlStruct("http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174",0));
         UrlQueue.addElement(new urlStruct("http://www.100steps.net",0));
-
+//          UrlQueue.addElement(new urlStruct("http://www.cnblogs.com/",0));
+//        UrlQueue.addElement(new urlStruct("http://map.100steps.net",0));
 //        System.out.println(UrlQueue.size());
     }
 }

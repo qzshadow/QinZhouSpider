@@ -6,6 +6,7 @@ import cn.scut.qinzhou.spider.model.FetchedPage;
 import cn.scut.qinzhou.spider.model.SpiderParams;
 import cn.scut.qinzhou.spider.parser.ContentParser;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
+import cn.scut.qinzhou.spider.queue.VisitedUrlQueue;
 import cn.scut.qinzhou.spider.storage.DataStorage;
 import cn.scut.qinzhou.spider.model.urlStruct;
 
@@ -39,25 +40,30 @@ public class SpiderWorker implements Runnable {
 
         while (!UrlQueue.isEmpty()) {
             System.out.println(UrlQueue.size());
+            System.out.println(VisitedUrlQueue.size());
             // 从待抓取队列中拿URL
             urlStruct url_level = UrlQueue.outElement();
 
             // 抓取URL指定的页面，并返回状态码和页面内容构成的FetchedPage对象
-            FetchedPage fetchedPage = fetcher.getContentFromUrlStruct(url_level);
+            FetchedPage fetchedPage = fetcher.getContentFromUrlStruct(url_level,threadIndex);
 
             // 检查爬取页面的合法性，爬虫是否被禁止
             if (!handler.check(fetchedPage)) {
                 // 切换IP等操作
                 // TODO
 
-                Log.info(fetchedPage.getUrl() + " fail "+ "Spider-" + threadIndex);
+                // 或者
+                // 存储已爬取的Url到VisitedUrlQueue，不再尝试爬取
+                VisitedUrlQueue.addElement(url_level);
+                Log.info(String.format("Spider-%1d %11s %1d", threadIndex, "Parsing", 0));
                 continue;
             }
 
             // 解析页面，获取目标数据
+            Log.info(String.format("Spider-%1d %11s %1d", threadIndex, "Parsing", 1));
             Object targetData = parser.parse(fetchedPage);
 
-            // 存储目标数据到数据存储（如DB）、存储已爬取的Url到VisitedUrlQueue
+            // 存储目标数据到数据存储（如DB
             store.store(targetData);
 
             // delay
