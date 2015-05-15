@@ -97,10 +97,10 @@ public class PageFetcher {
                         UrlQueue.addElement(url_level.url, url_level.level + 1);
                 }
         } finally {
-            if(connect) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Connecting", 1));
-            else if(!connect) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Connecting", 0));
-            if(download) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Downloading", 1));
-            else if(!download) Log.info(String.format("Spider-%1d %11s %1d", thread_num, "Downloading", 0));
+            if(connect) Log.info(String.format("Spider-%1d %11s %1d %d %s", thread_num, "Connecting", 1, url_level.level, url_level.url));
+            else if(!connect) Log.info(String.format("Spider-%1d %11s %1d %d %s", thread_num, "Connecting", 0, url_level.level, url_level.url));
+            if(download) Log.info(String.format("Spider-%1d %11s %1d %d %s", thread_num, "Downloading", 1, url_level.level, url_level.url));
+            else if(!download) Log.info(String.format("Spider-%1d %11s %1d %d %s", thread_num, "Downloading", 0, url_level.level, url_level.url));
         }
         return new FetchedPage(url_level, content, statusCode);
     }

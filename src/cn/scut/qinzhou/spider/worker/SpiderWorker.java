@@ -39,8 +39,8 @@ public class SpiderWorker implements Runnable {
         //	        所以，这里可以做个等待时间，再进行抓取（二次机会）
 
         while (!UrlQueue.isEmpty()) {
-            System.out.println(UrlQueue.size());
-            System.out.println(VisitedUrlQueue.size());
+//            System.out.println(UrlQueue.size());
+//            System.out.println(VisitedUrlQueue.size());
             // 从待抓取队列中拿URL
             urlStruct url_level = UrlQueue.outElement();
 
@@ -55,12 +55,12 @@ public class SpiderWorker implements Runnable {
                 // 或者
                 // 存储已爬取的Url到VisitedUrlQueue，不再尝试爬取
                 VisitedUrlQueue.addElement(url_level);
-                Log.info(String.format("Spider-%1d %11s %1d", threadIndex, "Parsing", 0));
+                Log.info(String.format("Spider-%1d %11s %1d %d %s", threadIndex, "Parsing", 0, url_level.level, url_level.url));
                 continue;
             }
 
             // 解析页面，获取目标数据
-            Log.info(String.format("Spider-%1d %11s %1d", threadIndex, "Parsing", 1));
+            Log.info(String.format("Spider-%1d %11s %1d %d %s", threadIndex, "Parsing", 1, url_level.level, url_level.url));
             Object targetData = parser.parse(fetchedPage);
 
             // 存储目标数据到数据存储（如DB

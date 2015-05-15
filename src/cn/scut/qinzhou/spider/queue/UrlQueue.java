@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import cn.scut.qinzhou.spider.model.urlStruct;
 
 public class UrlQueue {
-    private static LinkedList<urlStruct> urlQueue = new LinkedList<urlStruct>();
+    public static LinkedList<urlStruct> urlQueue = new LinkedList<urlStruct>();
 
     public synchronized static void addElement(String url, Integer level) {
         urlQueue.add(new urlStruct(url, level));

@@ -60,17 +60,10 @@ public class SpiderStarter {
     }
 
     /**
-     * 准备初始的爬取链接
+     * 设置种子站点
      */
     private static void initializeQueue() {
-        // 例如，需要抓取豆瓣TOP 250的电影信息，根据链接规则生成URLs放入带抓取队列
-//        for (int i = 0; i < 250; i += 25) {
-//            UrlQueue.addElement("http://movie.douban.com/top250?start=" + i);
-//        }
-
         UrlQueue.addElement(new urlStruct("http://www.100steps.net",0));
-//          UrlQueue.addElement(new urlStruct("http://www.cnblogs.com/",0));
-//        UrlQueue.addElement(new urlStruct("http://map.100steps.net",0));
-//        System.out.println(UrlQueue.size());
+
     }
 }

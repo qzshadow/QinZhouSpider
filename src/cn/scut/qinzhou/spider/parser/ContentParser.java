@@ -2,12 +2,15 @@ package cn.scut.qinzhou.spider.parser;
 
 import cn.scut.qinzhou.spider.model.FetchedPage;
 import cn.scut.qinzhou.spider.model.SpiderParams;
+import cn.scut.qinzhou.spider.model.urlStruct;
 import cn.scut.qinzhou.spider.queue.UrlQueue;
 import cn.scut.qinzhou.spider.queue.VisitedUrlQueue;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.util.LinkedList;
 
 public class ContentParser {
     public Object parse(FetchedPage fetchedPage) {
@@ -24,7 +27,7 @@ public class ContentParser {
         VisitedUrlQueue.addElement(fetchedPage.getUrl(), fetchedPage.getLevel());
 
         // 根据当前页面和URL获取下一步爬取的URLs
-        getUrlsInContents(doc, fetchedPage.getLevel()+1);
+        getUrlsInContents(doc, fetchedPage.getLevel());
 
         return targetObject;
     }
@@ -51,6 +54,7 @@ public class ContentParser {
                 // 根据搜索策略的不同将新的url放在UrlQueue的不同位置
                 if (SpiderParams.METHOD.equals("Depth")) UrlQueue.addFirstElement(addUrl, level+1);
                 else if (SpiderParams.METHOD.equals("Width")) UrlQueue.addElement(addUrl, level+1);
+                LinkedList<urlStruct> queue = UrlQueue.urlQueue;
             }
         }
     }
