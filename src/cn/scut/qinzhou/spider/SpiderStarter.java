@@ -15,6 +15,14 @@ import static java.lang.Thread.sleep;
 public class SpiderStarter {
 
     public static void main(String[] args) {
+        //  清空log文件以便重新写入
+        try{
+            System.out.println(System.getProperty("user.dir"));
+            FileWriter fw = new FileWriter("./log/log");
+            fw.write("");
+            fw.close();
+        }catch (Exception e){e.printStackTrace();}
+
         // 初始化配置参数
         initializeParams();
 
