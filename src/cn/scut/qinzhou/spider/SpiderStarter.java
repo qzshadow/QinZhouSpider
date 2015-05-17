@@ -72,6 +72,7 @@ public class SpiderStarter {
      */
     private static void initializeQueue() {
         UrlQueue.addElement(new urlStruct("http://www.100steps.net",0));
+//        UrlQueue.addElement(new urlStruct("http://www.cnblogs.com",0));//如果以此站点的log文件测试爬虫性能注意修改analysis.py中的insite函数正确判断是否是站内站点
 
     }
 }

@@ -23,10 +23,7 @@ public class ContentHandler {
     }
 
     private boolean isStatusValid(int statusCode) {
-        if (statusCode >= 200 && statusCode < 400) {
-            return true;
-        }
-        return false;
+        return statusCode >= 200 && statusCode < 400;
     }
 
     private boolean isAntiScratch(FetchedPage fetchedPage) {
@@ -36,10 +33,7 @@ public class ContentHandler {
         }
 
         // 页面内容包含的反爬取内容
-        if (fetchedPage.getContent().contains("<div>Forbidden</div>")) {
-            return true;
-        }
+        return fetchedPage.getContent().contains("<div>Forbidden</div>");
 
-        return false;
     }
 }

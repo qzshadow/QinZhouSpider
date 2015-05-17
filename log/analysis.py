@@ -11,6 +11,22 @@ from matplotlib import pyplot as plt
 from datetime import datetime
 import socket
 import numpy as np
+
+#根据域名判断是否是站内站点，如果是cnblogs的话要改为‘cnblogs’
+def in_site(url):
+    return 'steps.net' in url
+    
+#根据ip判断是否是站内站点，未使用
+def get_ip(url):
+    ip_addr = socket.getaddrinfo(url,'http')[0][4][0]
+    return ip_addr
+
+#将时间戳转化为实践间隔方便绘图
+def convert_timestamp_to_index(min_timestamp, timestamp):
+    min_datetime = datetime(int(min_timestamp[:4]),int(min_timestamp[5:7]),int(min_timestamp[8:10]),int(min_timestamp[11:13]),int(min_timestamp[14:16]),int(min_timestamp[17:19]),int(min_timestamp[20:23]))
+    now_datetime = datetime(int(timestamp[:4]),int(timestamp[5:7]),int(timestamp[8:10]),int(timestamp[11:13]),int(timestamp[14:16]),int(timestamp[17:19]),int(timestamp[20:23]))
+    return (now_datetime - min_datetime).seconds
+
 if os.path.exists(r"C:\Users\Qin\IdeaProjects\QinZhouSpider\log\log"):
     logFile = pd.read_csv(r"C:\Users\Qin\IdeaProjects\QinZhouSpider\log\log",error_bad_lines=False,encoding='utf-8',parse_dates=True, names=['DateTime','Thread_Num','Status','Tag','Level','Url'])
 logFile = logFile.dropna(how='any')
@@ -39,7 +55,7 @@ else:
                 page_stat[i][1] += 1
                 
     x = np.arange(max_level+1)
-    width = 0.1
+    width = 0.25
     plt.bar(x,page_stat[:,0],width,color='b',label='insite')
     plt.bar(x+width,page_stat[:,1],width,color='r',label = 'outsite')
     plt.xlabel('level')
@@ -48,14 +64,4 @@ else:
     plt.title('relationship between depth and pages')
     plt.xticks(x+width,x)
 
-def in_site(url):
-    return '100step' in url
-    
-def get_ip(url):
-    ip_addr = socket.getaddrinfo(url,'http')[0][4][0]
-    return ip_addr
 
-def convert_timestamp_to_index(min_timestamp, timestamp):
-    min_datetime = datetime(int(min_timestamp[:4]),int(min_timestamp[5:7]),int(min_timestamp[8:10]),int(min_timestamp[11:13]),int(min_timestamp[14:16]),int(min_timestamp[17:19]),int(min_timestamp[20:23]))
-    now_datetime = datetime(int(timestamp[:4]),int(timestamp[5:7]),int(timestamp[8:10]),int(timestamp[11:13]),int(timestamp[14:16]),int(timestamp[17:19]),int(timestamp[20:23]))
-    return (now_datetime - min_datetime).seconds

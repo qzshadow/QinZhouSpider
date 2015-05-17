@@ -37,12 +37,8 @@ public class ContentParser {
         // TODO
 
         // 通过content判断，比如需要抓取class为grid_view中的内容
-        if (contentDoc.getElementsByClass("grid_view") != null) {
-//            System.out.println(contentDoc.getElementsByClass("grid_view").toString());
-            return true;
-        }
+        return contentDoc.getElementsByClass("grid_view") != null;
 
-        return false;
     }
     //根据当前页面URL获取下一步爬取的URL
     private void getUrlsInContents(Document contentDoc,Integer level){

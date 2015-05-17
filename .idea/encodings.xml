@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/log/analysis.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/log/log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log/log_bak" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cn/scut/qinzhou/spider/model/FetchedPage.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cn/scut/qinzhou/spider/model/urlStruct.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cn/scut/qinzhou/spider/queue/UrlHashMap.java" charset="UTF-8" />

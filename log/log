@@ -1,56 +1,222 @@
-2015-05-16 14:48:29.769,Spider-1, Connecting,1,0,http://www.100steps.net
-2015-05-16 14:48:29.778,Spider-1,Downloading,1,0,http://www.100steps.net
-2015-05-16 14:48:29.780,Spider-1,    Parsing,1,0,http://www.100steps.net
-2015-05-16 14:48:30.896,Spider-1, Connecting,1,1,http://bbt.100steps.net
-2015-05-16 14:48:30.896,Spider-1,Downloading,1,1,http://bbt.100steps.net
-2015-05-16 14:48:30.897,Spider-1,    Parsing,1,1,http://bbt.100steps.net
-2015-05-16 14:48:33.119,Spider-1, Connecting,1,1,http://www.100steps.net/dai/
-2015-05-16 14:48:33.119,Spider-1,Downloading,1,1,http://www.100steps.net/dai/
-2015-05-16 14:48:33.120,Spider-1,    Parsing,1,1,http://www.100steps.net/dai/
-2015-05-16 14:48:34.298,Spider-1, Connecting,1,1,http://vote.100steps.net
-2015-05-16 14:48:34.299,Spider-1,Downloading,1,1,http://vote.100steps.net
-2015-05-16 14:48:34.299,Spider-1,    Parsing,1,1,http://vote.100steps.net
-2015-05-16 14:48:35.331,Spider-1, Connecting,1,1,http://map.100steps.net
-2015-05-16 14:48:35.331,Spider-1,Downloading,1,1,http://map.100steps.net
-2015-05-16 14:48:35.332,Spider-1,    Parsing,0,1,http://map.100steps.net
-2015-05-16 14:48:35.369,Spider-1, Connecting,1,1,http://www.100steps.net/mail/
-2015-05-16 14:48:35.369,Spider-1,Downloading,1,1,http://www.100steps.net/mail/
-2015-05-16 14:48:35.370,Spider-1,    Parsing,1,1,http://www.100steps.net/mail/
-2015-05-16 14:48:36.540,Spider-1, Connecting,1,1,http://weibo.com/2050820697
-2015-05-16 14:48:36.540,Spider-1,Downloading,1,1,http://weibo.com/2050820697
-2015-05-16 14:48:36.541,Spider-1,    Parsing,1,1,http://weibo.com/2050820697
-2015-05-16 14:48:37.793,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3796505892282370
-2015-05-16 14:48:37.793,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3796505892282370
-2015-05-16 14:48:37.793,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3796505892282370
-2015-05-16 14:48:38.877,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3792731019007540
-2015-05-16 14:48:38.877,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3792731019007540
-2015-05-16 14:48:38.879,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3792731019007540
-2015-05-16 14:48:40.541,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790723557664185
-2015-05-16 14:48:40.542,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790723557664185
-2015-05-16 14:48:40.542,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790723557664185
-2015-05-16 14:48:41.634,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790492086884316
-2015-05-16 14:48:41.635,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790492086884316
-2015-05-16 14:48:41.635,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790492086884316
-2015-05-16 14:48:42.723,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790360402393340
-2015-05-16 14:48:42.723,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790360402393340
-2015-05-16 14:48:42.724,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790360402393340
-2015-05-16 14:48:42.882,Spider-2, Connecting,0,1,http://2.100steps.net
-2015-05-16 14:48:42.883,Spider-2,Downloading,0,1,http://2.100steps.net
-2015-05-16 14:48:42.883,Spider-2,    Parsing,0,1,http://2.100steps.net
-2015-05-16 14:48:43.053,Spider-2, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790352848340530
-2015-05-16 14:48:43.054,Spider-2,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790352848340530
-2015-05-16 14:48:43.054,Spider-2,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790352848340530
-2015-05-16 14:48:44.227,Spider-2, Connecting,1,1,http://www.100steps.net/index.php?option=com_content&view=category&id=15&Itemid=176
-2015-05-16 14:48:44.228,Spider-2,Downloading,1,1,http://www.100steps.net/index.php?option=com_content&view=category&id=15&Itemid=176
-2015-05-16 14:48:44.228,Spider-2,    Parsing,1,1,http://www.100steps.net/index.php?option=com_content&view=category&id=15&Itemid=176
-2015-05-16 14:48:45.353,Spider-2, Connecting,1,1,http://weibo.com/100steps
-2015-05-16 14:48:45.353,Spider-2,Downloading,1,1,http://weibo.com/100steps
-2015-05-16 14:48:45.354,Spider-2,    Parsing,1,1,http://weibo.com/100steps
-2015-05-16 14:48:46.892,Spider-2, Connecting,1,1,http://www.renren.com/profile.do?id=360700875
-2015-05-16 14:48:46.892,Spider-2,Downloading,1,1,http://www.renren.com/profile.do?id=360700875
-2015-05-16 14:48:46.892,Spider-2,    Parsing,1,1,http://www.renren.com/profile.do?id=360700875
-2015-05-16 14:48:47.897,Spider-2: stop...
-2015-05-16 14:48:53.733,Spider-1, Connecting,0,1,http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174
-2015-05-16 14:48:53.733,Spider-1,Downloading,0,1,http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174
-2015-05-16 14:48:53.733,Spider-1,    Parsing,0,1,http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174
-2015-05-16 14:48:53.734,Spider-1: stop...
+2015-05-16 15:14:30.666,Spider-1, Connecting,1,0,http://www.100steps.net
+2015-05-16 15:14:30.667,Spider-1,Downloading,1,0,http://www.100steps.net
+2015-05-16 15:14:30.668,Spider-1,    Parsing,1,0,http://www.100steps.net
+2015-05-16 15:14:31.760,Spider-1, Connecting,1,1,http://bbt.100steps.net
+2015-05-16 15:14:31.760,Spider-1,Downloading,1,1,http://bbt.100steps.net
+2015-05-16 15:14:31.761,Spider-1,    Parsing,1,1,http://bbt.100steps.net
+2015-05-16 15:14:35.151,Spider-2, Connecting,1,1,http://2.100steps.net
+2015-05-16 15:14:35.152,Spider-2,Downloading,1,1,http://2.100steps.net
+2015-05-16 15:14:35.152,Spider-2,    Parsing,1,1,http://2.100steps.net
+2015-05-16 15:14:36.360,Spider-2, Connecting,1,1,http://vote.100steps.net
+2015-05-16 15:14:36.361,Spider-2,Downloading,1,1,http://vote.100steps.net
+2015-05-16 15:14:36.361,Spider-2,    Parsing,1,1,http://vote.100steps.net
+2015-05-16 15:14:37.018,Spider-1, Connecting,1,1,http://www.100steps.net/dai/
+2015-05-16 15:14:37.019,Spider-1,Downloading,1,1,http://www.100steps.net/dai/
+2015-05-16 15:14:37.019,Spider-1,    Parsing,1,1,http://www.100steps.net/dai/
+2015-05-16 15:14:37.389,Spider-2, Connecting,1,1,http://map.100steps.net
+2015-05-16 15:14:37.390,Spider-2,Downloading,1,1,http://map.100steps.net
+2015-05-16 15:14:37.390,Spider-2,    Parsing,0,1,http://map.100steps.net
+2015-05-16 15:14:37.411,Spider-2, Connecting,1,1,http://www.100steps.net/mail/
+2015-05-16 15:14:37.411,Spider-2,Downloading,1,1,http://www.100steps.net/mail/
+2015-05-16 15:14:37.412,Spider-2,    Parsing,1,1,http://www.100steps.net/mail/
+2015-05-16 15:14:38.193,Spider-1, Connecting,1,1,http://weibo.com/2050820697
+2015-05-16 15:14:38.194,Spider-1,Downloading,1,1,http://weibo.com/2050820697
+2015-05-16 15:14:38.194,Spider-1,    Parsing,1,1,http://weibo.com/2050820697
+2015-05-16 15:14:38.514,Spider-2, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3796505892282370
+2015-05-16 15:14:38.514,Spider-2,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3796505892282370
+2015-05-16 15:14:38.515,Spider-2,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3796505892282370
+2015-05-16 15:14:40.466,Spider-2, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790723557664185
+2015-05-16 15:14:40.466,Spider-2,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790723557664185
+2015-05-16 15:14:40.467,Spider-2,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790723557664185
+2015-05-16 15:14:41.511,Spider-2, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790492086884316
+2015-05-16 15:14:41.511,Spider-2,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790492086884316
+2015-05-16 15:14:41.512,Spider-2,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790492086884316
+2015-05-16 15:14:42.290,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3792731019007540
+2015-05-16 15:14:42.290,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3792731019007540
+2015-05-16 15:14:42.291,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3792731019007540
+2015-05-16 15:14:42.555,Spider-2, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790360402393340
+2015-05-16 15:14:42.556,Spider-2,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790360402393340
+2015-05-16 15:14:42.556,Spider-2,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790360402393340
+2015-05-16 15:14:43.336,Spider-1, Connecting,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790352848340530
+2015-05-16 15:14:43.336,Spider-1,Downloading,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790352848340530
+2015-05-16 15:14:43.337,Spider-1,    Parsing,1,1,http://api.t.sina.com.cn/2050820697/statuses/3790352848340530
+2015-05-16 15:14:47.906,Spider-1, Connecting,1,1,http://www.100steps.net/index.php?option=com_content&view=category&id=15&Itemid=176
+2015-05-16 15:14:47.907,Spider-1,Downloading,1,1,http://www.100steps.net/index.php?option=com_content&view=category&id=15&Itemid=176
+2015-05-16 15:14:47.908,Spider-1,    Parsing,1,1,http://www.100steps.net/index.php?option=com_content&view=category&id=15&Itemid=176
+2015-05-16 15:14:49.026,Spider-1, Connecting,1,1,http://weibo.com/100steps
+2015-05-16 15:14:49.026,Spider-1,Downloading,1,1,http://weibo.com/100steps
+2015-05-16 15:14:49.026,Spider-1,    Parsing,1,1,http://weibo.com/100steps
+2015-05-16 15:14:50.461,Spider-1, Connecting,1,1,http://www.renren.com/profile.do?id=360700875
+2015-05-16 15:14:50.461,Spider-1,Downloading,1,1,http://www.renren.com/profile.do?id=360700875
+2015-05-16 15:14:50.461,Spider-1,    Parsing,1,1,http://www.renren.com/profile.do?id=360700875
+2015-05-16 15:14:51.489,Spider-1, Connecting,1,2,http://bus.100steps.net/
+2015-05-16 15:14:51.489,Spider-1,Downloading,1,2,http://bus.100steps.net/
+2015-05-16 15:14:51.490,Spider-1,    Parsing,1,2,http://bus.100steps.net/
+2015-05-16 15:14:52.509,Spider-1, Connecting,1,2,http://bus.100steps.net/feedback.php
+2015-05-16 15:14:52.509,Spider-1,Downloading,1,2,http://bus.100steps.net/feedback.php
+2015-05-16 15:14:52.510,Spider-1,    Parsing,1,2,http://bus.100steps.net/feedback.php
+2015-05-16 15:14:53.562,Spider-2, Connecting,0,1,http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174
+2015-05-16 15:14:53.563,Spider-2,Downloading,0,1,http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174
+2015-05-16 15:14:53.563,Spider-2,    Parsing,0,1,http://www.100steps.net/index.php?option=com_content&view=categories&id=13&Itemid=174
+2015-05-16 15:14:53.655,Spider-2, Connecting,1,2,http://2.100steps.net/
+2015-05-16 15:14:53.655,Spider-2,Downloading,1,2,http://2.100steps.net/
+2015-05-16 15:14:53.655,Spider-2,    Parsing,1,2,http://2.100steps.net/
+2015-05-16 15:14:54.798,Spider-2, Connecting,1,2,http://vote.100steps.net/
+2015-05-16 15:14:54.799,Spider-2,Downloading,1,2,http://vote.100steps.net/
+2015-05-16 15:14:54.799,Spider-2,    Parsing,1,2,http://vote.100steps.net/
+2015-05-16 15:14:55.828,Spider-2, Connecting,1,2,http://doodle.100steps.net/
+2015-05-16 15:14:55.828,Spider-2,Downloading,1,2,http://doodle.100steps.net/
+2015-05-16 15:14:55.828,Spider-2,    Parsing,1,2,http://doodle.100steps.net/
+2015-05-16 15:14:58.155,Spider-2, Connecting,1,2,http://www.100steps.net/dai/
+2015-05-16 15:14:58.155,Spider-2,Downloading,1,2,http://www.100steps.net/dai/
+2015-05-16 15:14:58.156,Spider-2,    Parsing,1,2,http://www.100steps.net/dai/
+2015-05-16 15:14:59.185,Spider-2, Connecting,1,2,http://www.100steps.net/magazine/
+2015-05-16 15:14:59.185,Spider-2,Downloading,1,2,http://www.100steps.net/magazine/
+2015-05-16 15:14:59.185,Spider-2,    Parsing,1,2,http://www.100steps.net/magazine/
+2015-05-16 15:15:00.024,Spider-1, Connecting,1,2,http://www.100steps.net/
+2015-05-16 15:15:00.024,Spider-1,Downloading,1,2,http://www.100steps.net/
+2015-05-16 15:15:00.025,Spider-1,    Parsing,1,2,http://www.100steps.net/
+2015-05-16 15:15:00.209,Spider-2, Connecting,1,2,http://freshman.100steps.net/map/index.html
+2015-05-16 15:15:00.209,Spider-2,Downloading,1,2,http://freshman.100steps.net/map/index.html
+2015-05-16 15:15:00.210,Spider-2,    Parsing,1,2,http://freshman.100steps.net/map/index.html
+2015-05-16 15:15:01.076,Spider-1, Connecting,1,2,http://south.100steps.net/?page_id=1621
+2015-05-16 15:15:01.077,Spider-1,Downloading,1,2,http://south.100steps.net/?page_id=1621
+2015-05-16 15:15:01.077,Spider-1,    Parsing,1,2,http://south.100steps.net/?page_id=1621
+2015-05-16 15:15:01.321,Spider-2, Connecting,1,2,http://love.100steps.net/
+2015-05-16 15:15:01.322,Spider-2,Downloading,1,2,http://love.100steps.net/
+2015-05-16 15:15:01.322,Spider-2,    Parsing,1,2,http://love.100steps.net/
+2015-05-16 15:15:02.475,Spider-1, Connecting,1,2,http://www.100steps.net/index.php?option=com_content&view=article&id=541:2011-05-30-06-32-04&catid=9&Itemid=170
+2015-05-16 15:15:02.476,Spider-1,Downloading,1,2,http://www.100steps.net/index.php?option=com_content&view=article&id=541:2011-05-30-06-32-04&catid=9&Itemid=170
+2015-05-16 15:15:02.476,Spider-1,    Parsing,1,2,http://www.100steps.net/index.php?option=com_content&view=article&id=541:2011-05-30-06-32-04&catid=9&Itemid=170
+2015-05-16 15:15:03.587,Spider-1, Connecting,1,2,http://weibo.com/scutsinger
+2015-05-16 15:15:03.587,Spider-1,Downloading,1,2,http://weibo.com/scutsinger
+2015-05-16 15:15:03.588,Spider-1,    Parsing,1,2,http://weibo.com/scutsinger
+2015-05-16 15:15:05.022,Spider-1, Connecting,1,2,http://weibo.com/2180154282/z53wxluso
+2015-05-16 15:15:05.022,Spider-1,Downloading,1,2,http://weibo.com/2180154282/z53wxluso
+2015-05-16 15:15:05.022,Spider-1,    Parsing,1,2,http://weibo.com/2180154282/z53wxluso
+2015-05-16 15:15:06.617,Spider-1, Connecting,1,2,http://weibo.com/2180154282/z51wM24q2
+2015-05-16 15:15:06.618,Spider-1,Downloading,1,2,http://weibo.com/2180154282/z51wM24q2
+2015-05-16 15:15:06.618,Spider-1,    Parsing,1,2,http://weibo.com/2180154282/z51wM24q2
+2015-05-16 15:15:07.776,Spider-1, Connecting,1,2,http://weibo.com/2180154282/z51uDBXvt
+2015-05-16 15:15:07.777,Spider-1,Downloading,1,2,http://weibo.com/2180154282/z51uDBXvt
+2015-05-16 15:15:07.777,Spider-1,    Parsing,1,2,http://weibo.com/2180154282/z51uDBXvt
+2015-05-16 15:15:08.789,Spider-2, Connecting,1,2,http://100steps.net
+2015-05-16 15:15:08.789,Spider-2,Downloading,1,2,http://100steps.net
+2015-05-16 15:15:08.790,Spider-2,    Parsing,1,2,http://100steps.net
+2015-05-16 15:15:08.890,Spider-1, Connecting,1,2,http://weibo.com/2180154282/z4Zqk67c5
+2015-05-16 15:15:08.890,Spider-1,Downloading,1,2,http://weibo.com/2180154282/z4Zqk67c5
+2015-05-16 15:15:08.890,Spider-1,    Parsing,1,2,http://weibo.com/2180154282/z4Zqk67c5
+2015-05-16 15:15:09.908,Spider-1, Connecting,1,2,http://www.100steps.net/mail/index.php?/mailbox/log
+2015-05-16 15:15:09.909,Spider-1,Downloading,1,2,http://www.100steps.net/mail/index.php?/mailbox/log
+2015-05-16 15:15:09.909,Spider-1,    Parsing,1,2,http://www.100steps.net/mail/index.php?/mailbox/log
+2015-05-16 15:15:10.118,Cookie rejected: "[version: 0][name: U_TRS1][value: 000000f6.86a23ea.5556ee7d.f4062dc4][domain: .sina.com.cn][path: /][expiry: Sun May 13 15:15:09 CST 25]". Illegal domain attribute "sina.com.cn". Domain of origin: "vote.weibo.com"
+2015-05-16 15:15:10.118,Cookie rejected: "[version: 0][name: U_TRS2][value: 000000f6.86b13ea.5556ee7d.8130f79f][domain: .sina.com.cn][path: /][expiry: null]". Illegal domain attribute "sina.com.cn". Domain of origin: "vote.weibo.com"
+2015-05-16 15:15:10.119,Spider-2, Connecting,1,2,http://vote.weibo.com/vid=2497817
+2015-05-16 15:15:10.120,Spider-2,Downloading,1,2,http://vote.weibo.com/vid=2497817
+2015-05-16 15:15:10.120,Spider-2,    Parsing,1,2,http://vote.weibo.com/vid=2497817
+2015-05-16 15:15:11.114,Spider-1, Connecting,1,2,http://www.renren.com
+2015-05-16 15:15:11.114,Spider-1,Downloading,1,2,http://www.renren.com
+2015-05-16 15:15:11.115,Spider-1,    Parsing,1,2,http://www.renren.com
+2015-05-16 15:15:11.421,Spider-2, Connecting,1,2,http://st.renren.com
+2015-05-16 15:15:11.422,Spider-2,Downloading,1,2,http://st.renren.com
+2015-05-16 15:15:11.422,Spider-2,    Parsing,1,2,http://st.renren.com
+2015-05-16 15:15:12.521,Spider-1, Connecting,1,2,http://wwv.renren.com/xn.do?ss=10131&rt=1&g=v6reg
+2015-05-16 15:15:12.521,Spider-1,Downloading,1,2,http://wwv.renren.com/xn.do?ss=10131&rt=1&g=v6reg
+2015-05-16 15:15:12.522,Spider-1,    Parsing,1,2,http://wwv.renren.com/xn.do?ss=10131&rt=1&g=v6reg
+2015-05-16 15:15:13.392,Spider-2, Connecting,1,2,http://support.renren.com/link/suggest
+2015-05-16 15:15:13.393,Spider-2,Downloading,1,2,http://support.renren.com/link/suggest
+2015-05-16 15:15:13.393,Spider-2,    Parsing,1,2,http://support.renren.com/link/suggest
+2015-05-16 15:15:13.525,Spider-1, Connecting,0,2,http://help.renren.com/#http://help.renren.com/support/contomvice?pid=2&selection={couId:193,proId:342,cityId:1000375}
+2015-05-16 15:15:13.525,Spider-1,Downloading,0,2,http://help.renren.com/#http://help.renren.com/support/contomvice?pid=2&selection={couId:193,proId:342,cityId:1000375}
+2015-05-16 15:15:13.525,Spider-1,    Parsing,0,2,http://help.renren.com/#http://help.renren.com/support/contomvice?pid=2&selection={couId:193,proId:342,cityId:1000375}
+2015-05-16 15:15:14.456,Spider-1, Connecting,1,2,http://safe.renren.com/relive.do
+2015-05-16 15:15:14.457,Spider-1,Downloading,1,2,http://safe.renren.com/relive.do
+2015-05-16 15:15:14.457,Spider-1,    Parsing,1,2,http://safe.renren.com/relive.do
+2015-05-16 15:15:15.515,Spider-1, Connecting,0,2,https://open.mmarket.com:443/omee-aus/services/oauth/authorize?responseType=code&scope=getUserInfo&clientId=300007884008&redirectUri=http%3A%2F%2Fwww.renren.com%2Fbind%2Fcnmobile%2FloginCallBack&clientState=9
+2015-05-16 15:15:15.515,Spider-1,Downloading,0,2,https://open.mmarket.com:443/omee-aus/services/oauth/authorize?responseType=code&scope=getUserInfo&clientId=300007884008&redirectUri=http%3A%2F%2Fwww.renren.com%2Fbind%2Fcnmobile%2FloginCallBack&clientState=9
+2015-05-16 15:15:15.516,Spider-1,    Parsing,0,2,https://open.mmarket.com:443/omee-aus/services/oauth/authorize?responseType=code&scope=getUserInfo&clientId=300007884008&redirectUri=http%3A%2F%2Fwww.renren.com%2Fbind%2Fcnmobile%2FloginCallBack&clientState=9
+2015-05-16 15:15:16.053,Spider-1, Connecting,1,2,https://oauth.api.189.cn/emp/oauth2/authorize?app_id=296961050000000294&response_type=code&redirect_uri=http://www.renren.com/bind/ty/tyLoginCallBack
+2015-05-16 15:15:16.054,Spider-1,Downloading,1,2,https://oauth.api.189.cn/emp/oauth2/authorize?app_id=296961050000000294&response_type=code&redirect_uri=http://www.renren.com/bind/ty/tyLoginCallBack
+2015-05-16 15:15:16.054,Spider-1,    Parsing,1,2,https://oauth.api.189.cn/emp/oauth2/authorize?app_id=296961050000000294&response_type=code&redirect_uri=http://www.renren.com/bind/ty/tyLoginCallBack
+2015-05-16 15:15:17.500,Spider-1, Connecting,1,2,https://openapi.360.cn/oauth2/authorize?client_id=5ddda4458747126a583c5d58716bab4c&response_type=code&redirect_uri=http://www.renren.com/bind/tsz/tszLoginCallBack&scope=basic&display=default
+2015-05-16 15:15:17.500,Spider-1,Downloading,1,2,https://openapi.360.cn/oauth2/authorize?client_id=5ddda4458747126a583c5d58716bab4c&response_type=code&redirect_uri=http://www.renren.com/bind/tsz/tszLoginCallBack&scope=basic&display=default
+2015-05-16 15:15:17.500,Spider-1,    Parsing,1,2,https://openapi.360.cn/oauth2/authorize?client_id=5ddda4458747126a583c5d58716bab4c&response_type=code&redirect_uri=http://www.renren.com/bind/tsz/tszLoginCallBack&scope=basic&display=default
+2015-05-16 15:15:19.036,Invalid cookie header: "Set-Cookie: BAIDUID=BB083432FE79C88CBCC674ED9D617967:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2145916555; path=/; domain=.baidu.com; version=1". Unable to parse expires attribute: Thu
+2015-05-16 15:15:19.198,Invalid cookie header: "Set-Cookie: BAIDUID=BB083432FE79C88CF12F5095FA1AD53C:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2145916555; path=/; domain=.baidu.com; version=1". Unable to parse expires attribute: Thu
+2015-05-16 15:15:19.391,Spider-1, Connecting,1,2,https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=foRRWjPq8In3SIhmKQw1Pep3&redirect_uri=http%3A%2F%2Fwww.renren.com%2Fbind%2Fbaidu%2FbaiduLoginCallBack
+2015-05-16 15:15:19.391,Spider-1,Downloading,1,2,https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=foRRWjPq8In3SIhmKQw1Pep3&redirect_uri=http%3A%2F%2Fwww.renren.com%2Fbind%2Fbaidu%2FbaiduLoginCallBack
+2015-05-16 15:15:19.392,Spider-1,    Parsing,1,2,https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=foRRWjPq8In3SIhmKQw1Pep3&redirect_uri=http%3A%2F%2Fwww.renren.com%2Fbind%2Fbaidu%2FbaiduLoginCallBack
+2015-05-16 15:15:20.585,Spider-1, Connecting,1,2,http://2014.renren.com/mobile#container4
+2015-05-16 15:15:20.586,Spider-1,Downloading,1,2,http://2014.renren.com/mobile#container4
+2015-05-16 15:15:20.586,Spider-1,    Parsing,1,2,http://2014.renren.com/mobile#container4
+2015-05-16 15:15:21.715,Spider-1, Connecting,1,2,http://2014.renren.com/ipad
+2015-05-16 15:15:21.715,Spider-1,Downloading,1,2,http://2014.renren.com/ipad
+2015-05-16 15:15:21.715,Spider-1,    Parsing,1,2,http://2014.renren.com/ipad
+2015-05-16 15:15:22.843,Spider-1, Connecting,1,2,http://2014.renren.com/
+2015-05-16 15:15:22.843,Spider-1,Downloading,1,2,http://2014.renren.com/
+2015-05-16 15:15:22.844,Spider-1,    Parsing,1,2,http://2014.renren.com/
+2015-05-16 15:15:24.153,Spider-1, Connecting,1,2,http://page.renren.com/register/regGuide/
+2015-05-16 15:15:24.153,Spider-1,Downloading,1,2,http://page.renren.com/register/regGuide/
+2015-05-16 15:15:24.153,Spider-1,    Parsing,1,2,http://page.renren.com/register/regGuide/
+2015-05-16 15:15:24.444,Spider-2, Connecting,0,2,http://safe.renren.com/findPass.do
+2015-05-16 15:15:24.445,Spider-2,Downloading,0,2,http://safe.renren.com/findPass.do
+2015-05-16 15:15:24.445,Spider-2,    Parsing,0,2,http://safe.renren.com/findPass.do
+2015-05-16 15:15:24.615,Spider-2, Connecting,1,2,http://public.renren.com/
+2015-05-16 15:15:24.615,Spider-2,Downloading,1,2,http://public.renren.com/
+2015-05-16 15:15:24.615,Spider-2,    Parsing,1,2,http://public.renren.com/
+2015-05-16 15:15:25.773,Spider-1, Connecting,1,2,http://support.renren.com/helpcenter
+2015-05-16 15:15:25.774,Spider-1,Downloading,1,2,http://support.renren.com/helpcenter
+2015-05-16 15:15:25.774,Spider-1,    Parsing,1,2,http://support.renren.com/helpcenter
+2015-05-16 15:15:25.854,Spider-2, Connecting,1,2,http://www.renren.com/siteinfo/privacy
+2015-05-16 15:15:25.854,Spider-2,Downloading,1,2,http://www.renren.com/siteinfo/privacy
+2015-05-16 15:15:25.854,Spider-2,    Parsing,1,2,http://www.renren.com/siteinfo/privacy
+2015-05-16 15:15:27.055,Spider-2, Connecting,1,2,http://bolt.jebe.renren.com/introduce.htm
+2015-05-16 15:15:27.056,Spider-2,Downloading,1,2,http://bolt.jebe.renren.com/introduce.htm
+2015-05-16 15:15:27.056,Spider-2,    Parsing,1,2,http://bolt.jebe.renren.com/introduce.htm
+2015-05-16 15:15:27.312,Spider-1, Connecting,1,2,http://page.renren.com/marketing/index
+2015-05-16 15:15:27.312,Spider-1,Downloading,1,2,http://page.renren.com/marketing/index
+2015-05-16 15:15:27.312,Spider-1,    Parsing,1,2,http://page.renren.com/marketing/index
+2015-05-16 15:15:28.448,Spider-2, Connecting,1,2,http://dev.renren.com/
+2015-05-16 15:15:28.448,Spider-2,Downloading,1,2,http://dev.renren.com/
+2015-05-16 15:15:28.449,Spider-2,    Parsing,1,2,http://dev.renren.com/
+2015-05-16 15:15:28.760,Spider-1, Connecting,1,2,http://www.renren-inc.com/zh/product/renren.html
+2015-05-16 15:15:28.760,Spider-1,Downloading,1,2,http://www.renren-inc.com/zh/product/renren.html
+2015-05-16 15:15:28.760,Spider-1,    Parsing,1,2,http://www.renren-inc.com/zh/product/renren.html
+2015-05-16 15:15:29.841,Spider-1, Connecting,1,2,http://www.renren-inc.com/zh/hr/
+2015-05-16 15:15:29.841,Spider-1,Downloading,1,2,http://www.renren-inc.com/zh/hr/
+2015-05-16 15:15:29.841,Spider-1,    Parsing,1,2,http://www.renren-inc.com/zh/hr/
+2015-05-16 15:15:30.128,Spider-2, Connecting,1,2,http://page.renren.com/gongyi
+2015-05-16 15:15:30.128,Spider-2,Downloading,1,2,http://page.renren.com/gongyi
+2015-05-16 15:15:30.128,Spider-2,    Parsing,1,2,http://page.renren.com/gongyi
+2015-05-16 15:15:31.083,Spider-1, Connecting,1,2,http://www.jingwei.com/
+2015-05-16 15:15:31.084,Spider-1,Downloading,1,2,http://www.jingwei.com/
+2015-05-16 15:15:31.084,Spider-1,    Parsing,1,2,http://www.jingwei.com/
+2015-05-16 15:15:31.898,Spider-2, Connecting,1,2,http://wan.renren.com/
+2015-05-16 15:15:31.899,Spider-2,Downloading,1,2,http://wan.renren.com/
+2015-05-16 15:15:31.899,Spider-2,    Parsing,1,2,http://wan.renren.com/
+2015-05-16 15:15:32.239,Spider-1, Connecting,1,2,http://fenqi.renren.com/
+2015-05-16 15:15:32.240,Spider-1,Downloading,1,2,http://fenqi.renren.com/
+2015-05-16 15:15:32.240,Spider-1,    Parsing,1,2,http://fenqi.renren.com/
+2015-05-16 15:15:33.391,Spider-2, Connecting,1,2,http://quxue.renren.com/
+2015-05-16 15:15:33.391,Spider-2,Downloading,1,2,http://quxue.renren.com/
+2015-05-16 15:15:33.391,Spider-2,    Parsing,1,2,http://quxue.renren.com/
+2015-05-16 15:15:34.623,Spider-2, Connecting,1,2,http://mobile.renren.com/showClient?v=platform_hd&psf=42067
+2015-05-16 15:15:34.624,Spider-2,Downloading,1,2,http://mobile.renren.com/showClient?v=platform_hd&psf=42067
+2015-05-16 15:15:34.624,Spider-2,    Parsing,1,2,http://mobile.renren.com/showClient?v=platform_hd&psf=42067
+2015-05-16 15:15:35.882,Spider-2, Connecting,1,2,http://mobile.renren.com
+2015-05-16 15:15:35.882,Spider-2,Downloading,1,2,http://mobile.renren.com
+2015-05-16 15:15:35.882,Spider-2,    Parsing,1,2,http://mobile.renren.com
+2015-05-16 15:15:36.886,Spider-2, Connecting,0,2,mailto:admin@renren.com
+2015-05-16 15:15:36.886,Spider-2,Downloading,0,2,mailto:admin@renren.com
+2015-05-16 15:15:36.886,Spider-2,    Parsing,0,2,mailto:admin@renren.com
+2015-05-16 15:15:37.074,Spider-2, Connecting,1,2,http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/DFB957BAEB8B417882539C9B9F9547E6
+2015-05-16 15:15:37.076,Spider-2,Downloading,1,2,http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/DFB957BAEB8B417882539C9B9F9547E6
+2015-05-16 15:15:37.076,Spider-2,    Parsing,1,2,http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/DFB957BAEB8B417882539C9B9F9547E6
+2015-05-16 15:15:38.396,Spider-2, Connecting,1,2,http://www.miibeian.gov.cn/
+2015-05-16 15:15:38.397,Spider-2,Downloading,1,2,http://www.miibeian.gov.cn/
+2015-05-16 15:15:38.397,Spider-2,    Parsing,1,2,http://www.miibeian.gov.cn/
+2015-05-16 15:15:39.398,Spider-2: stop...
+2015-05-16 15:15:43.308,Spider-1, Connecting,0,2,http://mobile.renren.com/showClient?v=platform_rr&psf=42064
+2015-05-16 15:15:43.308,Spider-1,Downloading,0,2,http://mobile.renren.com/showClient?v=platform_rr&psf=42064
+2015-05-16 15:15:43.309,Spider-1,    Parsing,0,2,http://mobile.renren.com/showClient?v=platform_rr&psf=42064
+2015-05-16 15:15:43.309,Spider-1: stop...
